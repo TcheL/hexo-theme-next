@@ -3,7 +3,7 @@
 #}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} &mdash; {% endif %}{#
 #}<span itemprop="copyrightYear">{{ current }}</span>
   <span class="with-love" id="animate">
-    <i class="fa fa-{{ theme.footer.icon.name }}"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright | default(author) }}</span>
 
@@ -50,7 +50,7 @@
 
 {% if theme.footer.theme.enable %}
   <div class="theme-info">{#
-  #}{{ __('footer.theme') }} &mdash; {#
+  #}{{ __('footer.theme') }} - {#
   #}<a class="theme-link" target="_blank"{{ nofollow }} href="https://theme-next.org">{#
     #}NexT.{{ theme.scheme }}{#
   #}</a>{% if theme.footer.theme.version %} v{{ version }}{% endif %}{#
@@ -62,3 +62,17 @@
   #}{{ theme.footer.custom_text }}{#
 #}</div>
 {% endif %}
+
+<div class="busuanzi-count">
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <span class="site-uv">
+    <i class="fa fa-user"></i>
+    Vistor: <span id="busuanzi_value_site_uv"></span>
+  </span>
+  <span class="post-meta-divider">|</span>
+  <span class="site-pv">
+    <i class="fa fa-eye"></i>
+    View: <span id="busuanzi_value_site_pv"></span>
+  </span>
+</div>
+
