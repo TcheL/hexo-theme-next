@@ -62,6 +62,8 @@ footer:
   # If not defined, current year will be used.
   #since: 2015
 
+  counter: true
+
   # Icon between year and copyright info.
   icon:
     # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons
